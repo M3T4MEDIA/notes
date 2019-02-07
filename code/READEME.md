@@ -89,6 +89,10 @@ FF 00 FF FF 00 FF FF 00 FF FF 00 FF #
 
 # Computer Languages
 
+- [demo 1](images/icon1.png)
+- [demo 2](images/icon2.png)
+- [demo 3](images/icon3.png)
+
 Working with [Machine Code](https://en.wikipedia.org/wiki/Machine_code) (or Machine Language) is the lowest level of abstraction, it maps 1-to-1 with what a computers circuits can process (how this happens will be explained next week). It's rare that humans write anything in Machine Code, instead we work with human readable computer languages higher up on the ladder of abstraction.
 
 Different languages serve different purposes. The most common category, and the one we often think of when we think of "computer code" are [programming languages](https://en.wikipedia.org/wiki/Programming_language). Simply put, a programming language are instructions a human writes to get the computer to do what it wants. It's how we make video games and apps. There are plenty of different programming languages, each with their own syntax and specialty. Most of these languages are "general purpose", which means ultimately the can be used to make anything (regardless of their specialty). Below is the same program written in various languages.
