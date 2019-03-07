@@ -7,3 +7,5 @@
 - [Networks](https://github.com/M3T4MEDIA/notes/blob/master/networks/README.md)
 
 - [General notes on Online Research](https://github.com/M3T4MEDIA/notes/blob/master/intro/research-notes.md)
+
+- [Online Communities](https://github.com/M3T4MEDIA/notes/blob/master/online_communities/README.md)
