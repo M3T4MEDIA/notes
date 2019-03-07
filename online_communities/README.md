@@ -51,7 +51,7 @@ Even though these BBSs could only display text, users realized that they could c
 
 # Communities on the World Wide Web
 
-[Jason Scott](http://www.textfiles.com/jason/) && his [archive team](https://www.archiveteam.org/index.php?title=Main_Page) have saved lots of online folk-cultural works from extinction. The most popular of which (in our net art circles) is 1TB worth of geocities pages which they archived as a torrent. Spend a few minutes perusing through [One Terabyte of Kilobyte Age](http://blog.geocities.institute/) (the geocities research blog lead by net artists Olia Lialina && Dragan Espenschied editors of the [DIGITAL FOLKLORE Reader](http://digital-folklore.org/) )
+[Jason Scott](http://www.textfiles.com/jason/) && his [archive team](https://www.archiveteam.org/index.php?title=Main_Page) have saved lots of online folk-cultural works from extinction. The most popular of which (in our net art circles) is 1TB worth of geocities pages which they archived as a torrent. Spend a few minutes perusing through [One Terabyte of Kilobyte Age](http://blog.geocities.institute/) (the geocities research blog lead by net artists [Olia Lialina](http://art.teleportacia.org/olia.html) && Dragan Espenschied editors of the [DIGITAL FOLKLORE Reader](http://digital-folklore.org/) ), You can read more about Olia's ideas on this subject in her essays [A Vernacular Web](http://art.teleportacia.org/observation/vernacular/) and [A Vernacular Web 2](http://contemporary-home-computing.org/vernacular-web-2/)
 
 ![jason scott](images/jasonscott.jpg)
 
