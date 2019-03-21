@@ -41,11 +41,11 @@ McLuhan, Marshall. The Medium is the Massage: An Inventory of Effects. Gingko Pr
 
 Gladwell, Malcolm. [Creation Myth. Xerox PARC, Apple and the truth about innovation.](https://www.newyorker.com/magazine/2011/05/16/creation-myth) the New Yorker. 2011.
 
+[![Gladwell](images/gladwellmouse.jpg)](https://www.newyorker.com/magazine/2011/05/16/creation-myth)
+
 ##  the Truth About Innovation
 
 [![Everything Is A Remix Part 3](images/eiar3.png)](https://vimeo.com/25380454)
-
-[![Gladwell](gladwellmouse.jpg)](https://www.newyorker.com/magazine/2011/05/16/creation-myth)
 
 
 ##  Multiple Discovery && Undiscovered Public Knowledge
