@@ -21,7 +21,7 @@ Copying is how we learn art. For example, while working for Time Magazine, Hunte
 
 [![Everything Is A Remix Part 2](images/eiar2.png)](https://vimeo.com/19447662)
 
-## Genius
+## Genius and the Truth About Innovation
 
 > ’Authorship’ – in the sense we know it today, individual intellectual effort related to the book as an economic commodity – was practically unknown before the advent of print technology [...] the invention of printing did away with anonymity, fostering ideas of literary fame and the habit of considering intellectual effort as private property. Mechanical multiples of the same text created a public – a reading public [...] the idea of copywrite [...] was born
 
@@ -42,8 +42,6 @@ McLuhan, Marshall. The Medium is the Massage: An Inventory of Effects. Gingko Pr
 Gladwell, Malcolm. [Creation Myth. Xerox PARC, Apple and the truth about innovation.](https://www.newyorker.com/magazine/2011/05/16/creation-myth) the New Yorker. 2011.
 
 [![Gladwell](images/gladwellmouse.jpg)](https://www.newyorker.com/magazine/2011/05/16/creation-myth)
-
-##  the Truth About Innovation
 
 [![Everything Is A Remix Part 3](images/eiar3.png)](https://vimeo.com/25380454)
 
