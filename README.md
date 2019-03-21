@@ -11,3 +11,5 @@
 - [Online Communities](https://github.com/M3T4MEDIA/notes/blob/master/online_communities/README.md)
 
 - [Cascading Style Sheets](https://github.com/M3T4MEDIA/notes/blob/master/online_communities/csss.md)
+
+- [Copy + Paste](https://github.com/M3T4MEDIA/notes/blob/master/piratical_practices/README.md)
