@@ -13,3 +13,5 @@
 - [Cascading Style Sheets](https://github.com/M3T4MEDIA/notes/blob/master/online_communities/csss.md)
 
 - [Copy + Paste](https://github.com/M3T4MEDIA/notes/blob/master/piratical_practices/README.md)
+
+- [Open Source](https://github.com/M3T4MEDIA/notes/tree/master/open_source/README.md)
