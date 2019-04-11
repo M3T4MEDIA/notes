@@ -12,12 +12,13 @@
 
 ## Government Surveillance
 
-[![Glen Greenwald](http://i3.ytimg.com/vi/pcSlowAhvUk/maxresdefault.jpg)](https://www.youtube.com/watch?v=pcSlowAhvUk)
+[![Edward Snowden](http://i3.ytimg.com/vi/XEVlyP4_11M/maxresdefault.jpg)](https://www.youtube.com/watch?v=XEVlyP4_11M)
 
 > A society in which people can be monitored at all time, is a society that breeds conformity and obedience and submission. Which is why every tirent, [from] the most overt to the most subtle, craves that system. Conversely, even more importantly, it is a realm of privacy, the ability to go somewhere where we can think, and reason and interact and speak without the judgmental eyes of others being cast upon us, in which creativity and exploration and decent exclusively reside.
 
 — Glenn Greenwald
 
+[![Glen Greenwald](http://i3.ytimg.com/vi/pcSlowAhvUk/maxresdefault.jpg)](https://www.youtube.com/watch?v=pcSlowAhvUk)
 
 
 ## Corporate Surveillance
