@@ -1,8 +1,13 @@
 # Privacy
 
-> Like many fundamental rights, privacy is one of those things that becomes noticed only when it’s gone. That’s unfortunate, because after it’s gone it’s much harder to regain. We have to stop the slide. Fundamentally, the argument for privacy is a moral one. It is something we ought to have--not because it is profitable or efficient, but because it is moral. Mass surveillance should be relegated to the dustbin of history, along with so many other practices that humans once considered normal but are now universally recognized as abhorrent. Privacy is a human right.
+"I've got nothing to hide..."
+
+> Like many fundamental rights, privacy is one of those things that becomes noticed only when it’s gone. That’s unfortunate, because after it’s gone it’s much harder to regain. We have to stop the slide. Fundamentally, the argument for privacy is a moral one. It is something we ought to have—not because it is profitable or efficient, but because it is moral. Mass surveillance should be relegated to the dustbin of history, along with so many other practices that humans once considered normal but are now universally recognized as abhorrent. Privacy is a human right.
 
 — Bruce Schneier form [Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World](https://www.schneier.com/books/data_and_goliath/)
+
+
+[![Apple 1984](http://i3.ytimg.com/vi/axSnW-ygU5g/maxresdefault.jpg)](https://www.youtube.com/watch?v=axSnW-ygU5g)
 
 
 ## Government Surveillance
@@ -21,9 +26,9 @@ At the crossroads of [Moore's law](https://en.wikipedia.org/wiki/Moore's_law) an
 
 [![Google Staida](http://i3.ytimg.com/vi/BeFnQrgtZ9k/maxresdefault.jpg)](https://www.youtube.com/watch?v=BeFnQrgtZ9k)
 
-Today, as the saying goes, "when something is free, you're not the customer, you're the product." The business model...
+On the subject of the prevailing tech business model today, as the saying goes, "when something is free, you're not the customer, you're the product." The vitamins vs painkiller question:
 
-> A habit is when not doing an action causes a bit of pain. It is important to clairy that the term pain, as it is frequently used in business school and marketing books, is somewhat hyperbolic. In reality, the experience we are talking about is more similar to an itch, a feeling that manifests within the mind and cuases dicomfort until it is satisfied. The habit-forming products we use are simply there ot provide some sor tof relief. Using a technology or product to scratch the itch provides faster satisfaction than ignroing it. Once we come to depend on a tool, nothing else will do. My Answer to the vitamin versus painkiller question: Habit forming technologies are both. These services seem at first to be offering nice-to-have vitamins, but once the habit is established, they provide an ongoing pain remedy.
+> A habit is when not doing an action causes a bit of pain. It is important to clarify that the term pain, as it is frequently used in business school and marketing books, is somewhat hyperbolic. In reality, the experience we are talking about is more similar to an itch, a feeling that manifests within the mind and causes discomfort until it is satisfied. The habit-forming products we use are simply there to provide some sort of relief. Using a technology or product to scratch the itch provides faster satisfaction than ignoring it. Once we come to depend on a tool, nothing else will do. My Answer to the vitamin versus painkiller question: Habit forming technologies are both. These services seem at first to be offering nice-to-have vitamins, but once the habit is established, they provide an ongoing pain remedy.
 
 
 — Nir Eyal from [Hooked: How to Build Habit-Forming Products](https://www.goodreads.com/book/show/22668729-hooked)
@@ -74,7 +79,7 @@ there are plenty of amazing tools that offer fantastic short term solutions to t
 
 * browsers: [Firefox](https://www.mozilla.org/en-US/firefox/new/) for desktop + [Firefox Focus](https://itunes.apple.com/app/id1055677337) or [DuckDuckGo](https://duckduckgo.com/app) for mobile
 
-* VPN: [IPVanish](https://www.ipvanish.com/en/?a_aid=thewarlock&a_bid=d24399c2&chan=vpnu) + [ExpressVPN](https://www.expressvpn.com/, [TorGuard](https://torguard.net/) + [AirVPN](https://airvpn.org/plans/) + pretty soon [ProtonVPN](https://protonvpn.com/)
+* VPN: [IPVanish](https://www.ipvanish.com/en/?a_aid=thewarlock&a_bid=d24399c2&chan=vpnu) + [ExpressVPN](https://www.expressvpn.com/), [TorGuard](https://torguard.net/) + [AirVPN](https://airvpn.org/plans/) + pretty soon [ProtonVPN](https://protonvpn.com/)
 
 * TOR: [mainsite](https://www.torproject.org/) >> [TOR Browser](https://www.torproject.org/projects/torbrowser.html.en) && [Tails](https://tails.boum.org/) (routes all Internet traffic through TOR)
 
