@@ -21,3 +21,5 @@
 - [Open Source](https://github.com/M3T4MEDIA/notes/tree/master/open_source/README.md)
 
 - [Privacy](https://github.com/M3T4MEDIA/notes/tree/master/privacy/README.md)
+
+- [Artificial Intelligence](https://github.com/M3T4MEDIA/notes/tree/master/ai/README.md)
