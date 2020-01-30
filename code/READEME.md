@@ -53,6 +53,10 @@ Petzold, Charles. CODE, The Hidden Language of Computer Hardware and Software. M
 
 ![binary_add2](images/binary_add2.png)
 
+
+# Computer Languages
+
+
 ## Numerical Representation (the raw data)
 
 Inside the computer (especially the CPU) there's a microscopic tapestry of circuits. When the computer is on electricity oscillating between high and low voltages run throw these circuits. We generally refer to these as "bits" (short for binary digit), we call high voltages 1s and the low voltages 0s (ie. Binary Code). We often group these oscillations of voltages in groups of 8, which we call a "byte." These bytes can be used to represent any form of media.
@@ -60,6 +64,31 @@ Inside the computer (especially the CPU) there's a microscopic tapestry of circu
 ![ascii](images/ascii.png)
 
 In the interest of cross-platform compatibility (i.e. so you can share files from one computer to another regardless of what kind of computer it is) various organizations exist that create standards, an incomplete list of computer standards is available on [wikpedia](https://en.wikipedia.org/wiki/List_of_computer_standards). One of the oldest standards is ASCII (American Standard Code for Information Interchange), formalized in 1967, they standardized which numerical values would correspond to which characters.
+
+## Document File Formats and Markup Languages
+
+Document files and markups languages are similar to text files in that they only contain binary code that falls within the ASCII (or UNICODE) range and thus can be opened in any text editor. the difference between these file formats and a simple text file is that they are *meant* to be opened in a specific program. This is because (when formatted correctly with specific characters and syntax) they have been designed to be interpreted in particular ways by specific applications, for example...
+
+[Rich Text Format](https://en.wikipedia.org/wiki/Rich_Text_Format) (.rtf)
+```rtf
+{\rtf1\ansi{\fonttbl\f0\fswiss Helvetica;}\f0\pard
+ This is some {\b bold} text.\par
+ }
+ ```
+
+[Markdown](https://en.wikipedia.org/wiki/Markdown)
+```md
+This is some **bold** text.
+```
+
+[Hypertext Markup Language](https://en.wikipedia.org/wiki/HTML) (with a bit of [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets))
+```html
+<p style="font-family:Helvetica">
+  This is some <b>bold</b> text.
+</p>
+```
+
+## Binary File Formats (Images, Videos, Sounds)
 
 raw data of a `.bmp` file:
 ```bash
@@ -83,11 +112,14 @@ FF 00 FF FF 00 FF FF 00 FF FF 00 FF # ...and right to left
 FF 00 FF FF 00 FF FF 00 FF FF 00 FF #
 ```
 
+![databending](images/databending2.png)
+my [databending tutorials](http://nickbriz.com/databending101/)
+
 [Databending Images in Audacity](https://www.hellocatfood.com/databending-using-audacity/) by Antonio Roberts (aka hellocatfood)
 
 ![databending](images/databending.jpg)
 
-# Computer Languages
+## Programming Languages
 
 - [demo 1](images/icon1.png)
 - [demo 2](images/icon2.png)
@@ -182,24 +214,3 @@ Programming languages are for humans to read and write, a computer can't actuall
 
 ![Grace Hopper](images/grace.jpg)
 [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
-
-## Document File Formats and Markup Languages
-
-[Rich Text Format](https://en.wikipedia.org/wiki/Rich_Text_Format) (.rtf)
-```rtf
-{\rtf1\ansi{\fonttbl\f0\fswiss Helvetica;}\f0\pard
- This is some {\b bold} text.\par
- }
- ```
-
-[Markdown](https://en.wikipedia.org/wiki/Markdown)
-```md
-This is some **bold** text.
-```
-
-[Hypertext Markup Language](https://en.wikipedia.org/wiki/HTML) (with a bit of [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets))
-```html
-<p style="font-family:Helvetica">
-  This is some <b>bold</b> text.
-</p>
-```
