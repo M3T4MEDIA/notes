@@ -1,4 +1,4 @@
-# What is the Internet?
+# What / How / Where is the Internet?
 
 > Internet \in"ter*net\, n. A deeply misunderstood technology upon which we increasingly depend
 
@@ -8,40 +8,73 @@
 
 Virginia Heffernan (from her book [Magic and Loss: The Internet as Art](https://www.nytimes.com/2016/06/12/books/review/virginia-heffernans-magic-and-loss.html). Simon & Schuster. 2016.)
 
-## networking demo
 
-code for running a python server.
-Open a terminal an navigate to the folder you want to serve:
-```bash
-cd path/to/folder
-```
-Then depending on which version of python you have installed, launch the server. For python 2:
-```bash
-python -m SimpleHTTPServer
-```
-and for python 3:
-```bash
-python -m http.server
-```
-if you don't know what version of python you have installed you can check first by running:
-```bash
-python --version
-```
+> the Internet is a network of networks
 
-Now (assuming you've got the proper Sharing Settings set on your computer) another computer on the same network as you can request files from you using your local IP address. Your local IP address is listed in the Sharing section of your Settings, but you can also find it using the terminal. Enter `ifconfig` into your terminal (press enter) and look for the IP address next to the "inet" section of your WiFi card (which will show up in the outputed list)
+...so what's a network? it's just a bunch of computers connected together, which have all agreed to follow the same protocols so that they can exchange infromation.
 
-Let's assume for deomonstration that your local IP address is 192.168.0.10, the other computer on the same network can now request data from your computer using the `curl` command in the terminal, for example:
-```bash
-curl http://192.168.0.10:8000/path/to/file.txt
-```
-or simply type that same URL into the address bar of a browser.
+![Meshenger](images/meshenger2.jpg)
+
+[Meshenger](https://www.roelof.info/meshenger.html) by Dennis de Bel and Roel Roscam Abbing,
+
+[![dead drops](http://i3.ytimg.com/vi/hwohadcUv4A/maxresdefault.jpg)](https://www.youtube.com/watch?v=hwohadcUv4A)
+
+[Dead Drops](https://www.youtube.com/watch?v=hwohadcUv4A) (a peer-2-peer "offline" network) by Aram Bartholl
+
+
+### what's behind a website?
+
+visit a website in your browser, right-mouse click the page and "View Source." This is the HTML code, the file itself, that just traveled the world to reach your computer.
+
+### where did that website come from?
+
+#### Domain Names vs IP (Internet Protocol) addresses
+
+When you sign on to a local WiFi (or ethernet) network the router assigns you a "local" IP address, the router itself has a public IP address, this address is a unique address on the Internet. When your request packets leave your local network, your IP address is swapped with your router's address, this way the response (which could be coming from a computer half way across the world) knows to find it's way back to you. If you'd like to see what your public IP address is (ie. your router's IP address) do a web search for "[what's my IP address](https://duckduckgo.com/?q=what%27s+my+ip+address&t=canonical&atb=v137-1&ia=answer)"
 
 ![URL](images/URL.png)
 
-URL (Universal Resource Locator)
+*URL (Universal Resource Locator)*
+
+We rarely type IP address into our browser address bars, this is because a server could optionally register a "domain name" on the Internet's Domain Name System (DNS). This is like a giant phone book (or books) for the Internet that match names to numbers.
+
+[![DNS](http://i3.ytimg.com/vi/2ZUxoi7YNgs/hqdefault.jpg)](https://youtu.be/2ZUxoi7YNgs?t=1272)
+
+*DNS (the Internet's address book)*
+
+Here you can find a list of all the [The Root Servers](https://www.iana.org/domains/root/servers) for the DNS. You can look up any domain name's IP address by using the `nslookup` command in your terminal.
+
+[![citizen ex](images/citizen-ex.png)](http://citizen-ex.com/)
+
+"Citizen Ex" by James Bridle
 
 
-## a brief history of the Internet
+### how did that website get here?
+
+In your terminal, type: `traceroute somewebsite.com` or `mtr somewebsite.com` (if you have mtr installed) to follow the path that file took to get from here to there. It takes less than a second (only milliseconds) to "hop" through dozens of computers around the world.
+
+![comcast](images/comcastnetwork.jpg)
+ Comcast's fiber network across the country
+
+![Cuba Cable](images/cubacable.jpg)
+
+[this undersea cable its on its way to Cuba from Venezuela](http://runrun.es/runrunes/23374/la-corrupcion-cubana-en-empresas-bajo-las-ordenes-de-ramiro-valdes-salpicaria-a-venezuela-y-su-cable-de-fibra-a-cuba.html)
+
+![exchange points and undersea cables](images/internetmaps.gif)
+[view interactive undersea cable map](http://www.submarinecablemap.com/)
+[view interactive network exchange points map](http://www.internetexchangemap.com/#/)
+
+![landing point](images/manwhole.jpg)
+
+["This modest indentation on the Canadian coastline is a major Internet landmark, a sort of Ellis Island of the Web: It’s where a submarine cable owned by Hibernia Atlantic comes ashore."](http://andrewblum.net/2009/netscapes-wired-magazine/)
+
+![st Thomas](images/stthomas.png)
+
+
+![Directions ot Last Visitor](images/directionstolastvisitor.png)
+"Directions ot Last Visitor" by Charles Broskoski
+
+## Why / When / Who is the Internet
 
 [![History of the Internet](https://i3.ytimg.com/vi/21eFwbb48sE/maxresdefault.jpg)](https://youtu.be/21eFwbb48sE)
 
@@ -49,13 +82,13 @@ URL (Universal Resource Locator)
 
 ![networks](images/baran.jpg)
 
->  "The older telephone engineers had problems with the concept of packet switching. On one of my several trips to AT&T Headquarters at 195 Broadway in New York City I tried to explainpacket switching to a senior telephone company executive. In mid sentence he interrupted me, “Wait a minute, son. “Are you trying to tell me that you open the switch before the signal is transmitted all the way across the country?” I said, “Yes sir, that’s right.” The old analog engineer looked stunned. He looked at his colleagues in the room while his eyeballs rolled up sending a signal of his utter disbelief. He paused for a while, and then said, “Son, here’s how a telephone works….” And then he went on with a patronizing explanation of how a carbon button telephone worked. It was a conceptual impasse."
+>  "The older telephone engineers had problems with the concept of packet switching. On one of my several trips to AT&T Headquarters at 195 Broadway in New York City I tried to explain packet switching to a senior telephone company executive. In mid sentence he interrupted me, “Wait a minute, son. “Are you trying to tell me that you open the switch before the signal is transmitted all the way across the country?” I said, “Yes sir, that’s right.” The old analog engineer looked stunned. He looked at his colleagues in the room while his eyeballs rolled up sending a signal of his utter disbelief. He paused for a while, and then said, “Son, here’s how a telephone works….” And then he went on with a patronizing explanation of how a carbon button telephone worked. It was a conceptual impasse."
 
 from Paul Baran's [Oral History](https://ethw.org/Oral-History:Paul_Baran)
 
 > “I found myself [at MIT] surrounded by computers and I realized that sooner or later, these computers would need to communicate with each other. I also realized that the existing telephone network was woefully inadequate for such communication [...] what was needed was a new network technology.”
 
-Leonard Kleinrock (from an email exchange)
+Leonard Kleinrock (from an email exchange i had w/him)
 
 [![Licklider](http://i3.ytimg.com/vi/yU9oMOcRsuE/hqdefault.jpg)](https://youtu.be/yU9oMOcRsuE?t=1272)
 
@@ -78,6 +111,21 @@ ARPANET 1970
 ### [2:12](https://youtu.be/21eFwbb48sE?t=132)"...packet switching."
 
 ![packet switching](images/packetswitching.gif)
+
+
+### the Internet in the late 70s - 80s
+
+#### Telidon
+
+[![DNS](http://i3.ytimg.com/vi/vjMUe7hkwRs/hqdefault.jpg)](https://youtu.be/vjMUe7hkwRs)
+
+#### Bulletin Board Systems (BBSs)
+
+![BBS](images/bbs.jpg)
+
+There is a great [BBS documentary](https://archive.org/details/BBS.The.Documentary/BBS.The.Documentary.ep1.avi) by Internet archivist && documentary Jason Scott, who is responsible for documenting and preserving so much of the Internet's cultural history from documentaries on [early text adventure games](https://archive.org/details/getlamp-interviews) to various archives of online folk culture, including most notably the [GeoCities Archive](https://www.archiveteam.org/index.php?title=GeoCities_Torrent_Patch). This documentary on early Bulletin Board Systems from 2005 might be a little long && rough around the edges, but boy is it a treasure. it's an incredibly in depth look at the Internet's social spaces long before social media (or the web in general) PACKED w/interviews. a true gem.
+
+Lots of BBS's are still active, you can find a directory of 'em on the [Telnet BBS Guide](https://www.telnetbbsguide.com/bbs/lush-bbs/), if u fine one u like u can visit it on ur terminal by running: `telnet URL PORT` (where u replace the 'URL' && 'PORT' w/the info the BBS Guide for that particular BBS u want to visit).
 
 ### [2:58](https://youtu.be/21eFwbb48sE?t=178) "different networks can't talk to each other. TCP/IP solves this problem..."
 
@@ -105,6 +153,15 @@ email in the 1980s
 
 ARPANET 1982
 
+### [5:01](https://youtu.be/21eFwbb48sE?t=301) "...Al Gore..."
+
+With the standardization of TCP/IP came the real possibility to connect the ARPANET with other international networks and create a “network of networks” each controlled by different organizations but all following the same rules/protocols to form the Internet. In the 80’s the military handed over the ARPANET to the National Science Foundation (NSF), who then built the first “Internet backbone”, a high-speed network that connected different parts of the Internet together.
+
+Former US vice-president Al Gore may had [misspoken](https://www.youtube.com/watch?v=BnFJ8cHAlco) when he said he “took the initiative in creating the Internet” but what he was referring to was the work he and the Clinton Administration did to expand Internet usage beyond the academic niche. He wrote essays on the subject including “[Infrastructure for a Global Village](https://www.scientificamerican.com/magazine/sa/1991/09-01/#article-infrastructure-for-the-global-villa)” and pushed granting initiatives that lead to the National Information Infrastructure and the first popular graphical web browser (Mosaic). In 1994 the commercial restrictions were lifted when the Clinton Administration privatized the backbone. Around the same time Tim Berners-Lee's "web" project was really starting to get popular, and with that everyone started going "online."
+
+Today, no single institution controls the Internet. There are thousands of commercial companies, non-for profits, universities, governments, public interest groups and other entities who play different roles in controlling and maintaining the Internet. The many backbones (or [Tier 1 networks](http://en.wikipedia.org/wiki/Tier_1_network#List_of_tier_1_networks)) are maintained by different companies and interconnect to each other to exchange traffic (at [Internet exchange points](http://www.internetexchangemap.com/#/), the Internet's many "centers") on a voluntary (surprisingly informal) basis. There are a handful of international not-for-profit organizations like the IETF ([Internet Engineering Task Force](http://www.ietf.org/)) and ICANN ([Internet Corporation for Assigned Names and Numbers](https://www.icann.org/)) which develop and maintain the Internet’s standards and conventions, many of which are open for anyone to join and participate in.
+
+
 ### [3:56](https://youtu.be/21eFwbb48sE?t=236) the World Wide Web
 
 ![the Memex](images/memex.jpg)
@@ -120,94 +177,82 @@ In 1989 Tim Berners-Lee wrote a proposal for a system for linking hypertext docu
 
 Afraid that the growing popularity of the Web might lead to corporate competition creating proprietary (non-open) web applications that would destroy the integrity and open nature of the Web, Berners-Lee held the first WWW conference to discuss open web standards. This lead to the creation of the World Wide Web Consortium ([W3C](http://www.w3.org/)) which he still directs to this day. The W3C is an international organization open to anyone (and made up of [governments, companies, not-for-profits, universities, etc.](http://www.w3.org/Consortium/Member/List)) and is in charge of developing the open standards for the web.
 
-### [5:01](https://youtu.be/21eFwbb48sE?t=301) "...Al Gore..."
+#### Hypertext Markup Language (HTML)
 
-With the standardization of TCP/IP came the real possibility to connect the ARPANET with other international networks and create a “network of networks” each controlled by different organizations but all following the same rules/protocols to form the Internet. In the 80’s the military handed over the ARPANET to the National Science Foundation (NSF), who then built the first “Internet backbone”, a high-speed network that connected different parts of the Internet together.
+A web page is writtne in HTML, which is a kind of markup language Time Berners-Lee initially defined. To read more about markup languages and HTML refer to the [class notes on those](../code/markup_languages.md).
 
-Former US vice-president Al Gore may had misspoken when he said he “took the initiative in creating the Internet” but what he was referring to was the work he and the Clinton Administration did to expand Internet usage beyond the academic niche. He wrote essays on the subject including “[Infrastructure for a Global Village](https://www.scientificamerican.com/magazine/sa/1991/09-01/#article-infrastructure-for-the-global-villa)” and pushed granting initiatives that lead to the National Information Infrastructure and the first popular graphical web browser (Mosaic). In 1994 the commercial restrictions were lifted when the Clinton Administration privatized the backbone. Around the same time Tim Berners-Lee's "web" project was really starting to get popular, and with that everyone started going "online."
+#### Hypertext Transfer Protocol (HTTP)
 
-Today, no single institution controls the Internet. There are thousands of commercial companies, non-for profits, universities, governments, public interest groups and other entities who play different roles in controlling and maintaining the Internet. The many backbones (or [Tier 1 networks](http://en.wikipedia.org/wiki/Tier_1_network#List_of_tier_1_networks)) are maintained by different companies and interconnect to each other to exchange traffic (at [Internet exchange points](http://www.internetexchangemap.com/#/), the Internet's many "centers") on a voluntary (surprisingly informal) basis. There are a handful of international not-for-profit organizations like the IETF ([Internet Engineering Task Force](http://www.ietf.org/)) and ICANN ([Internet Corporation for Assigned Names and Numbers](https://www.icann.org/)) which develop and maintain the Internet’s standards and conventions, many of which are open for anyone to join and participate in.
+code for running a python server.
+Open a terminal an navigate to the folder you want to serve:
+```bash
+cd path/to/folder
+```
+Then depending on which version of python you have installed, launch the server. For python 2:
+```bash
+python -m SimpleHTTPServer
+```
+and for python 3:
+```bash
+python -m http.server
+```
+if you don't know what version of python you have installed you can check first by running:
+```bash
+python --version
+```
 
-### DNS (the Internet's address book)
+Now (assuming you've got the proper Sharing Settings set on your computer) another computer on the same network as you can request files from you using your local IP address. Your local IP address is listed in the Sharing section of your Settings, but you can also find it using the terminal. Enter `ifconfig` into your terminal (press enter) and look for the IP address next to the "inet" section of your WiFi card (which will show up in the outputed list)
 
-[![DNS](http://i3.ytimg.com/vi/2ZUxoi7YNgs/hqdefault.jpg)](https://youtu.be/2ZUxoi7YNgs?t=1272)
+#### Universal Resource Locator (URL)
 
-[The Root Servers](https://www.iana.org/domains/root/servers)
-
-
-### tracing our packet's route
-
-1. visit a website in your browser, right-mouse click the page and "View Source." This is the HTML code, the file itself, that just traveled the world to reach your computer.
-
-2. In your terminal, type: `nslookup thewebsite.com`
-to find the IP address of the server the website you visited is "hosted" on (replace "thewebsite.com" with your website). Your browser handles this lookup for you, first by asking your ISP and if they don't know the request get's passed along to one of these [Root Domain Server](http://root-servers.org/).
-
-
-4. Sites like [whatismyipaddress.com/ip-lookup](https://whatismyipaddress.com/ip-lookup) && [ip2location.com](http://www.ip2location.com/demo) can tell u where that server is physically located
-
-5. In your terminal, type: `traceroute somewebsite.com` or `mtr somewebsite.com` (if you have mtr installed) to follow the path that file took to get from here to there. It takes less than a second (only milliseconds) to "hop" through dozens of computers around the world.
-
-![comcast](images/comcastnetwork.jpg)
- Comcast's fiber network across the country
-
-![Cuba Cable](images/cubacable.jpg)
-
-[this undersea cable its on its way to Cuba from Venezuela](http://runrun.es/runrunes/23374/la-corrupcion-cubana-en-empresas-bajo-las-ordenes-de-ramiro-valdes-salpicaria-a-venezuela-y-su-cable-de-fibra-a-cuba.html)
-
-![exchange points and undersea cables](images/internetmaps.gif)
-[view interactive undersea cable map](http://www.submarinecablemap.com/)
-[view interactive network exchange points map](http://www.internetexchangemap.com/#/)
-
-![landing point](images/manwhole.jpg)
-
-["This modest indentation on the Canadian coastline is a major Internet landmark, a sort of Ellis Island of the Web: It’s where a submarine cable owned by Hibernia Atlantic comes ashore."](http://andrewblum.net/2009/netscapes-wired-magazine/)
-
-![st Thomas](images/stthomas.png)
+Let's assume for deomonstration that your local IP address is 192.168.0.10, the other computer on the same network can now request data from your computer using the `curl` command in the terminal, for example:
+```bash
+curl http://192.168.0.10:8000/path/to/file.txt
+```
+or simply type that same URL into the address bar of a browser.
 
 
-### net.art
 
-[![Rozendaal](http://i3.ytimg.com/vi/q2PlTV-RvnE/hqdefault.jpg)](https://youtu.be/q2PlTV-RvnE)
+# Hacking the Network
 
-> “I would make a drawing and my uncle would say, ‘oh that’s a beautiful drawing can I buy it from you’ and he would give me a little change, but then I didn’t have the drawing anymore, so then I thought if I make prints--things like that--then at least I can have a copy. But then the Internet came around and I have a copy and the whole world has a copy. I think if you would tell Leonardo Da Vinci, there’s this magical box that anyone around the world can access and they can also talk to you and you can work with color and with sound and interaction and with movement and anytime of the day you can change whatever and anyone around the world can see it for free, I think he would be pretty excited.”
+![Unauthorized Access](images/unauthorized-access.jpg)
 
-Rafaël Rozendaal
+[Aunauthorized Access](https://archive.org/details/UnauthorizedAccess): "using new technologies in a way which is not intended." -- unnamed German hacker. this documentary is a gem! A doc made in 1994 by Annaliza Savage, she traveled to 15 cities in four countries to record the stories of notorious hackers and hacker culture) in that era. Not the DIY home-brew tinkier sort of hacker (like the kind you'd find at a Hack-a-thon or maker space) but the "black hoodie" breaking into systems sort of hacker. Though illegal, this was a time before the "[Cyberwar](https://www.viceland.com/en_us/show/cyberwar)" era we're in now, most of these hackers weren't paid, they weren't after money, they did what they did either for political/activist reasons, or for the challenge, or sometimes just for fun.
 
-[![deep lab](images/deeplab.jpeg)](https://vimeo.com/116314844)
+## hacking depicted in popular media of the 80s and 90s
 
-A great (short) overview on the early days of Internet is Rachel Greene's essay from ArtForum [Web Work: A History of Internet Art](http://localhost:3003/notes/files/webwork.pdf).
+[![80s hacking](http://i3.ytimg.com/vi/rUGQHdYUIEo/hqdefault.jpg)](https://www.youtube.com/watch?v=rUGQHdYUIEo)
 
-![jodi.org](images/netart_jodi.png)
+[![90s hacking](http://i3.ytimg.com/vi/bbOEHcA-71I/hqdefault.jpg)](https://www.youtube.com/watch?v=bbOEHcA-71I)
 
-[wwwwwwwww.jodi.org](http://wwwwwwwww.jodi.org/) by jodi.org ( 1993 )
+## WiFi
 
-![all-html](images/netart_allhtml.png)
+![Electro Magnetic Spectrum](images/spectrum.gif)
 
-[all-html.net](http://all-html.net/) by [Evan Roth](http://www.evan-roth.com/work/) (2011)
+[the Electromagnetic Spectrum](https://en.wikipedia.org/wiki/Electromagnetic_spectrum)
 
-[![jodi.org](images/jodi.jpeg)](https://motherboard.vice.com/en_us/article/gvvndq/jodi-something-wrong-is-nothing-wrong)
+![Wifi antennas](images/antennas.jpg)
 
-[![Olia Lialina](https://i3.ytimg.com/vi/KBrQCMz9uPA/maxresdefault.jpg)](https://youtu.be/KBrQCMz9uPA)
+[Pretty Fly for a WiFi](https://www.roelof.info/pretty-fly-for-a-wi-fi.html) by Roel Roscam Abbing
 
-![shulgin](images/netart_shulgin.png)
+![wifi data safari](images/wifi-data-safari.png)
 
-[Form Art](http://www.c3.hu/collection/form/) by [Alexei Shulgin](http://www.easylife.org/) ( [1997](https://www.artsy.net/artwork/alexei-shulgin-form-art#!) )
+[WiFi Data Safari](https://player.vimeo.com/video/269679739?color=ff0179&title=0&byline=0&portrait=0&autoplay=1&loop=1) by Branger_Briz (Nick Briz and Brannon Dorsey)
 
-![drop](images/netart_drop.png)
+## jammers
 
-[checkboxes ball](https://mrdoob.com/lab/javascript/checkboxes/) by [Mr.Doob](https://mrdoob.com)
+![tv-b-gone](images/tv-b-gone.jpg)
 
-![solfrank](images/netart_femext.png)
+TV-B-Gone by [Mitch Altman](https://en.wikipedia.org/wiki/Mitch_Altman)
 
-[femail extention](images/http://artwarez.org/femext/) by [Cornelia Sollfrank](http://localhost:3003/notes/artwarez.org) (1997)
+![lady ada](images/lady-ada.png)
 
-![borderXing](images/netart_heath.png)
+Wave Bubble by [Limor Fried](https://en.wikipedia.org/wiki/Limor_Fried) (aka ladyada of [Adafruit](https://www.adafruit.com/))
 
-[borderXing](http://irational.org/heath/borderxing/home.html) by  [Heath Bunting and Kayle Brandon](http://irational.org/) (2002)
+![no-network](images/no-network.jpg)
 
-[![FAT Lab](images/fat.jpeg)](https://youtu.be/b0rlJvO1BQ)
+No Network by [Julian Oliver](https://julianoliver.com/)
 
+![log jammer](images/log-jammer.png)
 
-> “I don’t really worry too much about what is an artist, I worry more about if something is interesting. A lot of times people say well, ‘that movie on YouTube why is that not art and your piece is?’ but who cares it’s whatever is interesting [...] I live around the world, and that’s possible because the Internet is my stage.
-
-Rafaël Rozendaal
+Log Jammer by [Allison Burtch](https://allisonburtch.github.io/)
