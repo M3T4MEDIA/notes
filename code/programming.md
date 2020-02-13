@@ -148,9 +148,81 @@ void main(){
 
 ![JavaScript](images/javascript.jpg)
 
+# how a "library" works
+
+```js
+var canvas = document.createElement('canvas');
+	canvas.width = 600;
+	canvas.height = 400;
+	document.body.appendChild(canvas);
+var ctx = canvas.getContext('2d');
+
+// draw an ellipse
+function ellipse(x,y,w,h){
+    var kappa = 0.5522847498,
+        ox = (w / 2) * kappa,
+        oy = (h / 2) * kappa,
+        xe = x + w,      
+        ye = y + h,      
+        xm = x + w / 2,  
+        ym = y + h / 2;
+      ctx.beginPath();
+      ctx.moveTo(x, ym);
+      ctx.bezierCurveTo(x, ym - oy, xm - ox, y, xm, y);
+      ctx.bezierCurveTo(xm + ox, y, xe, ym - oy, xe, ym);
+      ctx.bezierCurveTo(xe, ym + oy, xm + ox, ye, xm, ye);
+      ctx.bezierCurveTo(xm - ox, ye, x, ym + oy, x, ym);
+      ctx.closePath();
+      ctx.fillStyle = "white";
+      ctx.fill();
+      ctx.stroke();
+}
+
+ellipse( 100, 100, 100, 50 );
+```
+
+vs
+
+```js
+function setup () {
+  createCanvas(600, 400)
+  ellipse( 100, 100, 100, 50 );
+}
+```
+
+[![p5js](images/p5.png)](https://p5js.org)
+
+## variables
 
 ![variables](images/variable.png)
 
-![function declaration](images/functinodeclaration.png)
+## conditional statements
 
-[![p5js](images/p5.png)](https://p5js.org)
+```js
+  let age = 10
+  if (age >= 21) {
+    console.log('welcome to the bar.')
+  } else {
+    console.log('get out of here kid!')
+  }
+```
+
+## loops
+
+```js
+let i = 0
+while (i < 10) {
+  console.log(i)
+  i++
+}
+```
+
+```js
+for(let i = 0; i < 10; i++){
+  console.log(i)
+}
+```
+
+## functions
+
+![function declaration](images/functinodeclaration.png)
