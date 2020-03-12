@@ -4,6 +4,14 @@
 
 [![AI](http://i3.ytimg.com/vi/9TRv0cXUVQw/maxresdefault.jpg)](https://www.youtube.com/watch?v=9TRv0cXUVQw)
 
+--------------
+--------------
+
+**[BIAS IN MACHINE LEARNING NOTES](http://nickbriz.com/talks/bias-in-ai/)**
+
+---------------------
+--------------
+
 ## Algorithms
 
 "computer scientists describe algorithms as a set of rules that define a sequence of operations. They're a series of instructions that tell a computer how it's supposed to solve a problem or achieve a certain goal. A good way to think of algorithms is by visualizing a flowchart." ...recall our "chocolate" vs "sour candy" game.
